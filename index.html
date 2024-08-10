@@ -3,69 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dog Poop Scooper</title>
+    <title>Grimsby-Clee-Pet Services</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="logo.png" alt="Dog Poop Scooper Logo">
+    <!-- Navigation -->
+    <nav class="navbar is-dark">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="#">
+                <img src="logo.png" alt="Grimsby-Clee-Pet Services Logo">
+            </a>
+            <div class="navbar-burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section id="home" class="hero">
-        <h1>Welcome to Dog Poop Scooper</h1>
-        <p>We make your yard clean and poop-free!</p>
-        <a href="#services" class="btn">Learn More</a>
-    </section>
-
-    <section id="about" class="about">
-        <h2>About Us</h2>
-        <p>We are a professional dog poop scooping service, dedicated to keeping your yard clean and your pets happy.</p>
-    </section>
-
-    <section id="services" class="services">
-        <h2>Our Services</h2>
-        <div class="service-item">
-            <h3>Weekly Scooping</h3>
-            <p>Regular weekly visits to keep your yard clean.</p>
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="#home">Home</a>
+                <a class="navbar-item" href="#about">About Us</a>
+                <a class="navbar-item" href="#services">Services</a>
+                <a class="navbar-item" href="#contact">Contact</a>
+            </div>
         </div>
-        <div class="service-item">
-            <h3>One-Time Clean-Up</h3>
-            <p>Need a quick clean-up before an event? We’ve got you covered.</p>
-        </div>
-        <div class="service-item">
-            <h3>Custom Plans</h3>
-            <p>We offer custom plans to fit your needs.</p>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero is-large is-primary">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 class="title">
+                    Grimsby-Clee-Pet Services
+                </h1>
+                <h2 class="subtitle">
+                    Keeping Your Yard Clean and Your Pets Happy
+                </h2>
+                <a href="#services" class="button is-link is-large">Our Services</a>
+            </div>
         </div>
     </section>
 
-    <section id="contact" class="contact">
-        <h2>Contact Us</h2>
-        <form action="#" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-
-            <button type="submit" class="btn">Send Message</button>
-        </form>
+    <!-- About Us Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="title has-text-centered">About Us</h2>
+            <p class="has-text-centered">At Grimsby-Clee-Pet Services, we provide professional dog poop scooping services to ensure your yard stays clean and your pets stay happy. We serve Grimsby, Cleethorpes, and surrounding areas.</p>
+        </div>
     </section>
 
-    <footer>
-        <p>&copy; 2024 Dog Poop Scooper. All rights reserved.</p>
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <div class="container">
+            <h2 class="title has-text-centered">Our Services</h2>
+            <div class="columns">
+                <div class="column">
+                    <div class="box">
+                        <h3 class="title is-4">Weekly Scooping</h3>
+                        <p>Regular weekly visits to keep your yard clean.</p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="box">
+                        <h3 class="title is-4">One-Time Clean-Up</h3>
+                        <p>Quick clean-up before an event or gathering.</p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="box">
+                        <h3 class="title is-4">Custom Plans</h3>
+                        <p>Flexible plans tailored to your specific needs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section is-medium">
+        <div class="container">
+            <h2 class="title has-text-centered">Contact Us</h2>
+            <form id="contactForm">
+                <div class="field">
+                    <label class="label" for="name">Name</label>
+                    <div class="control">
+                        <input class="input" type="text" id="name" name="name" required>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="label" for="email">Email</label>
+                    <div class="control">
+                        <input class="input" type="email" id="email" name="email" required>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="label" for="message">Message</label>
+                    <div class="control">
+                        <textarea class="textarea" id="message" name="message" required></textarea>
+                    </div>
+                </div>
+
+                <div class="control has-text-centered">
+                    <button type="submit" class="button is-primary">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer has-text-centered">
+        <div class="content">
+            <p>&copy; 2024 Grimsby-Clee-Pet Services. All rights reserved.</p>
+        </div>
     </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
